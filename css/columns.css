@@ -1,0 +1,57 @@
+/*Projects section*/
+
+.content-in-column {
+    margin-right:2px;
+    /* height:300px; */
+}
+
+.column {
+    float:left;
+    background-color:rgb(201, 166, 123);
+    border:1px solid blueviolet;
+    padding:5px;
+    margin-right:2%;
+    margin-bottom:2%;
+    border-radius:10px;
+    text-align:center;
+}
+
+.links {
+    margin-top:10px;
+}
+
+.column:hover {
+    background-color:burlywood;
+    transform:translate(0, -8px);
+    transition-duration:0.5s;
+
+}
+
+/* .column-container {
+    display: flex;
+    flex-wrap: nowrap;
+} */
+
+@media (min-width:992px) {
+    .column {
+        width:31%;
+        height:350px;
+    }
+}
+
+@media (max-width:991px) and (min-width:768px) {
+    .column {
+        width:48%;
+        height:300px;
+    }
+    .just-for-fun {
+        clear:left;
+    }
+}
+
+@media (max-width:767px) {
+    .column {
+        width:98%;
+        height:auto;
+    }
+}

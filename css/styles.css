@@ -1,0 +1,131 @@
+:root {
+    --margin-left: 5%; /*left margin*/
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lora', serif;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.navbar {
+    background-color:rgb(76, 76, 190) !important;    
+}
+
+section {
+    margin-top:20px;
+    /* margin-left:var(--margin-left); */
+    padding-left:5%; /*want background colour*/
+    overflow:auto; /*prevent section elem from collapsing*/
+}
+
+.section-title {
+    margin-top:50px;
+    margin-bottom:30px;
+}
+
+#projects-section h5 {
+    margin-bottom:30px;
+}
+
+hr {
+    width:75%;
+    margin-left:12.5%;
+    /* margin-left:var(--margin-left); */
+}
+.nav-item:hover, .nav-item:active {
+    background-color:yellowgreen;
+    border-radius: 10px;
+}
+
+.table {
+    color:white;
+}
+
+table button { /*target buttons inside table*/
+    font-size:50%;
+}
+
+table .btn { /*buttons inside table. Note table a doesn't work*/
+    font-size:60%;
+    margin-bottom:3px;
+    width:100%;
+}
+
+#year-1-sem-2, #year-2-sem-2 {
+    margin-left:5%;
+}
+
+#year-2-sem-1, #year-2-sem-2 {
+    margin-top: 50px;
+}
+
+#projects-section {
+    /* margin-left:5%; */
+    width:100%; /*95 for symmetry*/    
+}
+
+/*center title texts*/
+.section-title {
+    text-align:center;
+    margin-right:var(--margin-left);
+    /* background-color:blueviolet; */
+    /*horizontal line effect*/
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+}
+/*preventing horizontal line strikethrough*/
+.section-title span {
+    background:#fff; 
+    padding:0 10px; 
+}
+
+.section-title #courses-span {
+    background:rgb(76,170,170); 
+}
+
+
+
+/*BAD STYLE: correction to the right margin offset issue*/
+/* #projects-offset {
+    margin-right:0px;
+} */
+
+#year-2-sem-1 {
+    clear:left;
+}
+
+#projects-section .btn {
+    font-size:80%;
+}
+
+/*LINKS*/
+.link-primary {
+    text-decoration:none;
+    color:darkorchid;
+}
+
+.link-primary:hover {
+    color:cornflowerblue;    
+}
+
+.languages-used {
+    border:1px solid blueviolet;
+    width:50%;
+    font-size:80%;
+    margin-left:25%;
+    margin-top:25px;
+}
+
+#seamcarving-languages-used {
+    /*make box wider*/
+    width:60%;
+    margin-left:20%;
+}
+
+/* #footer-container {
+    background-color:rgb(76, 76, 190);
+} */

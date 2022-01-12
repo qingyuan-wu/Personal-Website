@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <!--Icon for Chrome tab-->
+      <link rel="shortcut icon" type="image/x-icon" href="images/logo/QW_logo_transparent_32px.png"/>
+      <!-- Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Qingyuan Wu is a second year University of Toronto Engineering student. This is his personal portfolio website.">
+        <meta charset="utf-8">
+        <title>Qingyuan's Portfolio Webiste</title>
+
+        <!--Make consistent across browsers-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!--Bootstrap-->
+        <link href="css\bootstrap.min.css" rel="stylesheet" media="all">
+        <!--Own style-->
+        <link rel="stylesheet" href="css/about_me.css">
+        <link rel="stylesheet" href="css/columns.css">
+        <link rel="stylesheet" href="css/tables.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="images/logo/QW_logo_transparent_64px.png" width="32" height="32" alt="Site logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#projects-section">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#school-section">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume-section">Resume</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+        <section id="about-me-section">
+            <img src="images/portfolio_photo.webp" alt="Qingyuan's portfolio photo" class="img-thumbnail" id="image">
+            <div id="about-me-text">
+                Hi, thanks for stopping by! My name is <strong>Qingyuan Wu</strong> and I am a second year Engineering Science student at the University of Toronto. In my free time, I love to play sports, the board game Go, and travel! I am still discovering different career paths, but I have particular interest in software development/testing, machine learning research, or design.
+                <br>
+                <br>
+                <div>Keep scrolling to see:
+                  <ul>
+                    <li>Some cool projects, programming or otherwise, that I've completed</li>
+                    <li>An overview of the courses I've taken so far, with links to course work</li>
+                  </ul>
+                   PDF of my <a href="resume/Qingyuan_Wu_resume.pdf" target="_blank" class="link-primary">resume</a></div>
+            </div>
+        </section>
+
+        <section id="projects-section">
+          <h4 class="section-title" id="projects-offset"><span>Projects</span></h4>
+          <!--3 Column, 2 column, 1 column responsive layout-->
+          <h5>Programming</h5>
+          <!--figure out how to use this column-container to display:flex (all the boxes same height)-->
+          <div class="column-container">
+            <div class="column" id="seamcarving">
+              <div class="content-in-column">
+                <div><strong>Seamcarving</strong></div>
+                Seamcarving resizes the image without distorting it, or cropping out important parts.
+                I built a C program that computed the seam of "minimum energy" pixels to be removed.
+                <hr>
+                <div class="languages-used" id="seamcarving-languages-used">
+                  April 2021
+                  <br>
+                  C - finding path
+                  <br>
+                  Python - converting between .bin and .png
+                </div>
+                <div class="links">
+                <a class="btn btn-primary" href="https://github.com/qingyuan-wu/Seam-Carving" role="button" target="_blank">Source Code</a>
+                <a class="btn btn-primary" href="https://youtu.be/9WJvDcoNFzA" role="button" target="_blank">Quick Demo</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="content-in-column">
+                <div><strong>Gomoku (Connect 5)</strong></div>
+                I programmed the popular board game Gomoku. The program allows two users to play against each other, or the user to play against a computer AI. 
+                <hr>
+                <div class="languages-used">
+                  November 2020
+                  <br>
+                  Python
+                </div>
+                <div class="links">
+                <a class="btn btn-primary" href="https://github.com/qingyuan-wu/Gomoku" role="button" target="_blank">Source Code</a>
+                <a class="btn btn-primary" href="https://youtu.be/jZYE9Xz0poo" role="button" target="_blank">Gameplay Demo</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="content-in-column">
+                <div><strong>Bot Grade checker</strong></div>
+                I used Selenium and web-automation to log into my university's academics website to check for newly released grades.
+                The program sent myself an e-mail whenever there is a new grade.
+                <hr/>
+                <div class="languages-used">
+                  December, 2021
+                  <br>
+                  Used: Python, Selenium, Webdriver
+                </div>
+                <div class="links">
+                  <a class="btn btn-primary" href="https://github.com/qingyuan-wu/Grade-Checker" role="button" target="_blank">Source Code</a>
+                  <a class="btn btn-primary" href="work\projects\Doc_Grade_Checker.pdf" role="button" target="_blank">Documentation</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="content-in-column">
+                <div><strong>Finding Synonyms</strong></div>
+                A program that uses a large database of words and a <a class="link-primary" href="https://aip.scitation.org/doi/pdf/10.1063/1.5014006#:~:text=SEMANTIC%20SIMILARITY%20ALGORITHMS,-Semantic%20similarity%20measures&text=They%20are%20classified%20as%20corpus,elements%20(words%2C%20phrases)." target="_blank">semantic similartiy algorithm</a> to predict synonyms of a word.
+              </div>
+              <hr/>
+              <div class="languages-used">
+                November 2020
+                <br>
+                Used: Python
+              </div>
+              <div class="links">
+                <a class="btn btn-primary" href="https://github.com/qingyuan-wu/Python-Projects" role="button">Source Code</a>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="content-in-column">
+                <div><strong>Chrome Extension - Linear Algebra Calculator</strong></div>
+                Currently working on a linear algebra calculator that calculates some basic linear algebra functions,
+                including determinants, inverses, and performing gaussian elimination.
+              </div>
+              <hr/>
+              <div class="languages-used">
+                October 2021
+                <br>
+                HTML, CSS, JavaScript
+              </div>
+              <div class="links">
+                <a class="btn btn-primary" href="https://github.com/qingyuan-wu/Algebros" role="button">Source Code</a>
+                <a class="btn btn-primary" href="https://youtu.be/6eN_oq_5tU4" role="button">Quick Demo</a>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="content-in-column">
+                <div><strong>Sudoku Solver</strong></div>
+                A program that can solve any valid Sudoku, and outputs multiple solutions if the puzzle is not unique.
+              </div>
+              <hr/>
+              <div class="languages-used">
+                  January 2022
+                  <br>
+                  Used: Python
+              </div>
+              <div class="links">
+                <a class="btn btn-primary" href="#" role="button">Source Code</a>
+              </div>
+            </div>
+
+          </div>
+
+          <h5 id="design-and-research">Design and Research</h5>
+
+          <!--Fence-->
+          <div class="column" id="RFP">
+            <div class="content-in-column">
+              <div><strong>A Sustainable, Movable Fence</strong></div>
+              I worked with three other student engineers to design a movable fence that helped a small-scale farmer practice <a href="https://en.wikipedia.org/wiki/Rotational_grazing" target="_blank" class="link-primary">rotational grazing</a>. We built a full-scale functional prototype of our "fence of wheels" design that was approved by our stakeholder. Click to see both the abstract and the entire document of our Request for Proposal, as well our final design flyer.
+              <hr>
+              <div class="links">
+                <a class="btn btn-primary" href="work\year1-sem2\Rotational_Grazing_Abstract_ESC102.pdf" role="button" target="_blank">RFP Abstract</a>
+                <a class="btn btn-primary" href="work\year1-sem2\Rotational_Grazing_RFP_ESC102.pdf" role="button" target="_blank">RFP</a>
+                <a class="btn btn-primary" href="work\year1-sem2\Rolling_Fence_ESC102.pdf" role="button" target="_blank">Final Design</a>
+              </div>
+            </div>
+          </div>
+
+          <!--Gene Therapy Paper-->
+          <div class="column" id="gene-therapy">
+            <div class="content-in-column">
+              <div><strong>Gene Therapy and the Equity Crisis</strong></div>
+              I conducted extensive research on the inequitable access, mainly due to income, to gene therapy treatments. I arrived at practical proposals on how the government could implement measures to resolve the crisis. I would also like to bring more awareness to this issue.
+              <hr>
+              <div class="links">
+                <a class="btn btn-primary" href="work\year2-sem1\Research_Assignment_ESC203.pdf" role="button" target="_blank">Paper</a>
+              </div>
+            </div>
+          </div>
+
+          <!--Franck-Hertz-->
+          <div class="column" id="franck-hertz">
+            <div class="content-in-column">
+              <div><strong>Verifying the Franck-Hertz Experiment</strong></div>
+              My lab partner and I performed the Franck-Hertz experiment and verified the quantization of energy.
+              <hr>
+              <div class="links">
+                <a class="btn btn-primary" href="work\year2-sem1\Franck-Hertz_PHY293.pdf" role="button" target="_blank">Report</a>
+              </div>
+            </div>
+          </div>
+
+          <h5 class="just-for-fun">Just for Fun</h5>
+
+          <!--Breaking Bad-->
+          <div class="column">
+            <div class="content-in-column">
+              <div><strong>Breaking Bad API</strong></div>
+              A simple program that fetches a random quote and character image from a Breaking Bad API, and posts them.
+            </div>
+            <hr/>
+            <div class="languages-used">
+                July, 2021
+                <br>
+                Used: React, HTML, CSS
+            </div>
+            <div class="links">
+            </div>
+          </div>
+
+          <!--Leetcode-->
+          <div class="column">
+            <div class="content-in-column">
+              <div><strong>Leetcode Problems</strong></div>
+              I keep a doc of some interesting Leetcode problems I've encountered and techniques I used to solve them.
+            </div>
+            <hr/>
+            <div class="languages-used">
+              Python
+            </div>
+            <div class="links">
+              <a class="btn btn-primary" target="_blank" href="work/Leetcode/leetcode.py" role="button">Set 1 (.py)</a>
+              <a class="btn btn-primary" target="_blank" href="work/Leetcode/DS_leetcode.py" role="button">Set 2 (.py)</a>
+              <a class="btn btn-primary" target="_blank" href="work/Leetcode/Leetcode-Notes.md" role="button">Set 3 (.md)</a>
+            </div>
+          </div>
+
+      </section>
+
+        <section id="school-section">
+          <h4 class="section-title"><span id="courses-span">Courses</span></h4>
+          <div>Here is a list of all the courses I've taken so far in the Engineering Science program at the University of Toronto.</div>
+          
+          <!-- <div>Year 1</div> -->
+          <table class="table table-striped table-hover" id="year-1-sem-1">
+              <thead>
+                  <tr>
+                      <td colspan="3">Year 1 Semester 1</td>
+                  </tr>
+                <tr>
+                  <th scope="col">Course</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Sample Work</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">ESC103</th>
+                  <td>Basics topics in <strong>linear algebra</strong>, including matrices, eigenvalues, inverses, and simple proofs. We also used <strong>MATLAB</strong> to create our own ODE solvers and graphed outputs</td>
+                  <td>
+                    <!-- <a class="btn btn-primary" href="#" role="button">MATLAB Assignments</a> -->
+                    <a class="btn btn-primary" href="work\year1-sem1\Truss_Analysis_ESC103.pdf" target="_blank" role="button">Truss Analysis</a>
+                  </td>
+
+                </tr>
+                <tr>
+                  <th scope="row">PHY180</th>
+                  <td>Covered topics in <strong>classical mechanics</strong>, including kinematics, Newton's Laws, momentum, rotational motion, and simple harmonic motion</td>
+                  <td>
+                    <a class="btn btn-primary" href="work\year1-sem1\Pendulum_Lab_PHY180.pdf" target="_blank" role="button">Pendulum Study</a>
+                  </td>
+
+                </tr>
+                <tr>
+                  <th scope="row">ESC194</th>
+                  <td><strong>Calculus I</strong>: Differentiation, integration, epsilon-delta proofs, curve sketching, and intro to ODE's</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">CIV102</th>
+                  <td>A <strong>civil engineering</strong> course that covered stress and strain, beam bending, truss analysis, buckling, deflection, and concrete design</td>
+                  <td>Bridge Design</td>
+                </tr>
+                <tr>
+                  <th scope="row">ESC101</th>
+                  <td>We were introduced to <strong>engineering design</strong>. We worked throughout the semester to improve existing designs, such as music stands suitable for outdoor performance conditions</td>
+                  <td>Design Critique</td>
+                </tr>
+                <tr>
+                  <th scope="row">ESC180</th>
+                  <td>An introductory to <strong>Python programming</strong> course. We learned basic Python syntax, documentation, functions, arrays, big-O notation, sorting, and recursion</td>
+                  <td>
+                    <a class="btn btn-primary" href="https://github.com/qingyuan-wu/Python-Projects/tree/main/SmallPrograms" target="_blank" role="button">Labs</a>
+                    <a class="btn btn-primary" href="https://github.com/qingyuan-wu/Python-Projects/tree/main/Synonyms" target="_blank" role="button">Synonym Detection</a>
+                    <a class="btn btn-primary" href="https://github.com/qingyuan-wu/Gomoku" target="_blank" role="button">Gomoku</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- <div>Year 1 Semester 2</div> -->
+            <table class="table table-striped table-hover" id="year-1-sem-2">
+              <thead>
+                <tr>
+                  <tr>
+                      <td colspan="3">Year 1 Semester 2</td>
+                  </tr>
+                  <th scope="col">Course</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Projects</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">ESC102</th>
+                  <td>The second <strong>engineering design</strong> course. I worked in a group of four student engineers and completed a semester-long project to solve a real-world community's problem. Our solution was a movable fence design
+                  </td>
+                  <td>
+                    <a class="btn btn-primary" href="work/year1-sem2/Rolling_Fence_ESC102.pdf" target="_blank" role="button">Final Design</a>
+                    <a class="btn btn-primary" href="work/year1-sem2/Rotational_Grazing_RFP_ESC102.pdf" target="_blank" role="button">RFP</a>
+                    <a class="btn btn-primary" href="work/year1-sem2/Rotational_Grazing_Abstract_ESC102.pdf" target="_blank" role="button">RFP Abstract</a>
+
+                  </td>
+
+                </tr>
+                <tr>
+                  <th scope="row">ECE159</th>
+                  <td>A course on <strong>electric circuits</strong>. We covered DC circuit analysis, AC circuits, complex power. We also used LTSpice to aid our circuit analysis.</td>
+                  <td>
+
+                  </td>
+
+                </tr>
+                <tr>
+                  <th scope="row">ESC195</th>
+                  <td><strong>Calculus II</strong>: More on integration, sequences and series, multivariable calculus, Lagrange multipliers</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">MAT185</th>
+                  <td>A <strong>linear algebra</strong> course that focused on proofs. Intro to vector spaces, determinants, inverses, rank-nullity, diagonalziation, etc.</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">MSE160</th>
+                  <td>A course in materials science. We covered topics including stress and strain, polymer bonding, and phase diagrams</td>
+                  <td>
+                    <a class="btn btn-primary" href="work/year1-sem2/Ferromagnetism_Report_MSE160.pdf" target="_blank" role="button">Ferromagnetism Research Project</a>
+                    </td>
+                </tr>
+                <tr>
+                  <th scope="row">ESC190</th>
+                  <td>A course on <strong>C programming</strong> and <strong>Data Structures and Algorithms</strong>. Topics covered include stacks and queues, path-finding, DFS, BFS, A*, dynamic programming, and an introduction to neural networks.</td>
+                  <td>
+                    <a class="btn btn-primary" href="https://github.com/natalievolk/ESC190Labs" target="_blank" role="button">Labs</a>
+                    <a class="btn btn-primary" href="https://github.com/qingyuan-wu/Seam-Carving" target="_blank" role="button">Seamcarving</a>  
+                    Autocomplete
+                  </td>
+                  
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="table table-striped table-hover" id="year-2-sem-1">
+              <thead>
+                <tr>
+                  <tr>
+                      <td colspan="3">Year 2 Semester 1</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">See my <a class="link-primary", target="_blank" href="https://github.com/qingyuan-wu/EngSci_Year2">Year 2</a> GitHub for all course work</td>
+                  </tr>
+                  <th scope="col">Course</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Projects</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">MAT292</th>
+                  <td>A course on <strong>Ordinary Differential Equations</strong>. We were introduced to first and second order equations, their existance and uniqueness, systems of first order equations, Laplace transforms, and convolutions.
+                  </td>
+                  <td>
+                    <a class="btn btn-primary" href="https://github.com/qingyuan-wu/EngSci_Year2/tree/main/MAT292%20ODEs" target="_blank" role="button">MATLAB Labs</a>                      
+                  </td>
+
+                </tr>
+                <tr>
+                  <th scope="row">CHE260</th>
+                  <td>A course on <strong>thermodynamics and heat transfer</strong>. Content covered include the thermonyamic laws, entropy, Carnot engines, isentropic efficiency, and the modes of heat transfer (conduction, convection, radiation)</td>
+                  <td>
+                    Labs: First Law and the Ideal Gas Law
+                  </td>
+
+                </tr>
+                <tr>
+                  <th scope="row">ESC203</th>
+                  <td><strong>Ethics</strong>. In this course we explored the security, equity and sustainability crises. I also conducted formal research on the equity issues surrounding gene therapy treamtnet accessbility.</td>
+                  <td>
+                    <a class="btn btn-primary" href="work\year2-sem1\Research_Assignment_ESC203.pdf" target="_blank" role="button">Gene Therapy Paper</a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">AER210</th>
+                  <td>A course broken up into two halves - <strong>vector calculus</strong> and <strong>fluid dynamics</strong>.</td>
+                  <td>
+                    <a class="btn btn-primary" href="https://github.com/qingyuan-wu/EngSci_Year2/tree/main/AER210%20Vector%20Calc%20and%20Fluid%20Mechanics" target="_blank" role="button">Microfluidics</a>
+                    <a class="btn btn-primary" href="https://github.com/qingyuan-wu/EngSci_Year2/tree/main/AER210%20Vector%20Calc%20and%20Fluid%20Mechanics" target="_blank" role="button">Flow Visualization</a>
+
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">PHY293</th>
+                  <td>A course broken up into two halves - <strong>waves</strong> and <strong>modern physics</strong>. In waves we looked in detail at simple harmonic motion, damped and drivien oscillators, and power. In modern physics we studied special relativity and quantum mechanics, including the Schrodinger Equation and the finite square well.</td>
+                  <td> 
+                    <a class="btn btn-primary" href="work/year2-sem1/Franck-Hertz_PHY293.pdf" target="_blank" role="button">Franck-Hertz Experiment</a>
+                    <a class="btn btn-primary" href="work/year2-sem1/Wave_Phenomena_PHY293.pdf" target="_blank" role="button">Wave Phenomena</a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">ECE253</th>
+                  <td>A course on <strong>digital and computer systems</strong>. Topics covered include boolean algebra, combinational circuits, flip flops, finite state machines, ALUs, registers, ARM assembly, and interrupts.</td>
+                  <td>
+                    <a class="btn btn-primary" href="https://github.com/qingyuan-wu/EngSci_Year2/tree/main/ECE253%20Digital%20and%20Computer%20Systems" target="_blank" role="button">Verilog Labs</a>
+                    <a class="btn btn-primary" href="https://github.com/qingyuan-wu/EngSci_Year2/tree/main/ECE253%20Digital%20and%20Computer%20Systems" target="_blank" role="button">ARM Assembly Labs</a>
+                    
+                  </td>
+                </tr>
+              </tbody>
+            </table> 
+            
+            <table class="table table-striped table-hover" id="year-2-sem-2">
+              <thead>
+                <tr>
+                  <tr>
+                      <td colspan="3">Year 2 Semester 2 (IN PROGRESS)</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">See my <a class="link-primary", target="_blank" href="https://github.com/qingyuan-wu/EngSci_Year2">Year 2</a> GitHub for all course work</td>
+                  </tr>
+                  <th scope="col">Course</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Projects</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">CSC343</th>
+                  <td>Databases and SQL
+                  </td>
+                  <td>
+                    
+                  </td>
+
+                </tr>
+                <tr>
+                  <th scope="row">BME205</th>
+                  <td>Biomedical Engineering.</td>
+                  <td></td>
+
+                </tr>
+                <tr>
+                  <th scope="row">ESC204</th>
+                  <td>Engineering Design - Praxis III.</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">ECE286</th>
+                  <td>Statistics.</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">PHY294</th>
+                  <td>Quantum and thermal physics.</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">ECE259</th>
+                  <td>Electricity and magnetism.</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table> 
+      </section>
+
+        <section id="resume-section">
+            <h4 class="section-title"><span>My Resume</span></h4>
+            <div>You can find a PDF of my resume <a href="resume/Qingyuan_Wu_resume.pdf" target="_blank" class="link-primary">here</a>
+        </section>
+
+    <!--svg links for icons-->
+    <!--Notes: must set style="display:none;" so the logo doesn't display twice (we're calling it later)-->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="github" viewBox="0 0 24 24">
+        <path d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"/>
+    </symbol></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="linkedin" viewBox="0 0 310 310">
+        <path id="XMLID_802_" d="M72.16,99.73H9.927c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5H72.16c2.762,0,5-2.238,5-5V104.73
+        C77.16,101.969,74.922,99.73,72.16,99.73z"/>
+    <path id="XMLID_803_" d="M41.066,0.341C18.422,0.341,0,18.743,0,41.362C0,63.991,18.422,82.4,41.066,82.4
+        c22.626,0,41.033-18.41,41.033-41.038C82.1,18.743,63.692,0.341,41.066,0.341z"/>
+    <path id="XMLID_804_" d="M230.454,94.761c-24.995,0-43.472,10.745-54.679,22.954V104.73c0-2.761-2.238-5-5-5h-59.599
+        c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5h62.097c2.762,0,5-2.238,5-5v-98.918c0-33.333,9.054-46.319,32.29-46.319
+        c25.306,0,27.317,20.818,27.317,48.034v97.204c0,2.762,2.238,5,5,5H305c2.762,0,5-2.238,5-5V194.995
+        C310,145.43,300.549,94.761,230.454,94.761z"/>
+    </symbol></svg>
+        
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none;"><symbol id="mail" viewBox="0 0 512 512"><path d="M424 80H88a56.06 56.06 0 00-56 56v240a56.06 56.06 0 0056 56h336a56.06 56.06 0 0056-56V136a56.06 56.06 0 00-56-56zm-14.18 92.63l-144 112a16 16 0 01-19.64 0l-144-112a16 16 0 1119.64-25.26L256 251.73l134.18-104.36a16 16 0 0119.64 25.26z"></path>
+    </symbol></svg>
+
+        <div class="container" id="footer-container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <div class="col-md-4 d-flex align-items-center">
+
+                <span class="text-muted">&copy; 2021 Qingyuan Wu</span>
+              </div>
+          
+              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="https://github.com/qingyuan-wu" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#github"/></svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="https://linkedin.com/in/qingyuan-wu" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#linkedin"/></svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="mailto:qyw.wu@mail.utoronto.ca" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#mail"/></svg></a></li>
+              </ul>
+            </footer>
+          </div>
+
+        <!--JavaScript-->
+        <!-- <script src="js\jquery-3.6.0.js"></script> -->
+        <script src="js\bootstrap.min.js"></script>
+        <!-- <script src="js\script.js"></script> -->
+    </body>
+</html>

@@ -54,7 +54,7 @@ class Solution(object):
 
         while x > secondHalfFlipped:
             secondHalfFlipped = secondHalfFlipped * 10 + x%10
-            x //= 10;
+            x //= 10
 
         # 12321 -> 1232, 1 -> 123, 12, -> 12, 123
         # 1221 -> 122, 1 -> 12, 12

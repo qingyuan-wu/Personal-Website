@@ -50,3 +50,6 @@ To access cPanel, go to Go Daddy -> My Products -> Web Hosting -> Manage. Websit
 
 ### Jan 10 3:30pm
 Added some translation properties for the projects section, also changed default colour. CHanges in `columns.css`.
+
+### Jan 15
+Added the Game of Life project. Made a single word change to the intro section

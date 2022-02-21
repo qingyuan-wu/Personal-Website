@@ -1,8 +1,11 @@
 /*Projects section*/
 
+.column-container, .subsection-title {
+    clear:left;
+}
+
 .content-in-column {
     margin-right:2px;
-    /* height:300px; */
 }
 
 .column {
@@ -14,6 +17,8 @@
     margin-bottom:2%;
     border-radius:10px;
     text-align:center;
+
+    overflow:auto;
 }
 
 .links {

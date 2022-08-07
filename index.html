@@ -51,9 +51,9 @@
         </nav>
 
         <section id="about-me-section">
-            <img src="images/portfolio_photo.webp" alt="Qingyuan's portfolio photo" class="img-thumbnail" id="image">
+            
             <div id="about-me-text">
-                Hi, thanks for stopping by! My name is <strong>Qingyuan Wu</strong> and I am a second year Engineering Science student at the University of Toronto majoring in Machine Intelligence. In my free time, I love to play sports, the board game Go, and travel! I am still discovering different career paths, but I have particular interest in software development, testing, and machine learning research.
+                Hi, thanks for stopping by! My name is <strong>Qingyuan Wu</strong> and I am a second year Engineering Science student at the University of Toronto majoring in Machine Intelligence. In my free time, I love to play sports, the board game Go, and travel! I am still discovering different career paths, but I have particular interest in software development, ML, and math.
                 <br>
                 <br>
                 <div>Keep scrolling to see:
@@ -61,7 +61,7 @@
                     <li>Some cool projects, programming or otherwise, that I've completed</li>
                     <li>An overview of the courses I've taken so far, with links to course work</li>
                   </ul>
-                   PDF of my <a href="resume/Qingyuan_Wu_resume_feb21.pdf" target="_blank" class="link-primary">resume</a> (last updated: Feb 21)</div>
+                   PDF of my <a href="resume/Qingyuan_Wu_resume_aug7.pdf" target="_blank" class="link-primary">resume</a> (last updated: Aug 7)</div>
             </div>
         </section>
 
@@ -70,15 +70,97 @@
 
           <h4 class="section-title" id="projects-offset"><span>Projects</span></h4>
           <!--3 Column, 2 column, 1 column responsive layout using media queries-->
-          <h5 class="subsection-title">In Progress (as of Feb 21)</h5>
+          <h5 class="subsection-title">Machine Learning</h5>
           <div class="column-container">
+            <div class="column" id="music-genre-classifier">
+              <div class="content-in-column">
+                <div><strong>Music Genre Classifier</strong></div>
+                We trained a <strong>Convolutional Neural Network</strong> to classify music into one of 10 genres.
+                <hr>
+                <div class="languages-used">
+                  April 2022
+                  <br>
+                  PyTorch - implementing our ML model
+                  <br>
+                  Convolutional neural network
+                </div>
+                <div class="links">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="column" id="plastic-sorter">
+              <div class="content-in-column">
+                <div><strong>Plastic Sorter</strong></div>
+                I worked in a team of six student engineers in a semester-long design project to implemenet a fully-automated plastic sorting system. We trained a CNN to classify the plastics by type, and communicated the result to an IOT device to sort the plastics into the appropriate container.
+                <hr>
+                <div class="languages-used">
+                  April 2022
+                  <br>
+                  PyTorch
+                  <br>
+                  Convolutional neural network
+                  <br>
+                  Node.js
+                  <br>
+                  Arduino
+                </div>
+                <div class="links">
+                  <a class="btn btn-primary" href="https://github.com/qingyuan-wu/Praxis-III" role="button" target="_blank">Source Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="column" id="NLP">
+              <div class="content-in-column">
+                <div><strong>Paragraph Title Generator</strong></div>
+                I'm taking on this project as a member of the CloudClub AI Team. We are building a <strong>transformer neural network</strong>  in <strong>PyTorch</strong> that generates a title that summarizes a paragraph of input text.
+                <hr>
+                <div class="languages-used">
+                  January-August 2022
+                  <br>
+                  PyTorch - implementing our ML model
+                  <br>
+                  Natural Language Processing (NLP)
+                  <br>
+                  Transformer neural network
+                </div>
+                <div class="links">
+                  <a class="btn btn-primary" href="https://github.com/CloudClub-uoft/Title-Generator" role="button" target="_blank">Source Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h5 class="subsection-title">Software</h5>
+          <div class="column-container">
+            <div class="column" id="rellit">
+              <div class="content-in-column">
+                <div><strong>Rellit - Location-Based Forum App</strong></div>
+                Rellit allows users to see questions posted closest to them. Users can also interact with others through the live chat feature and use an embedded map to easily see posts around them.
+                <hr>
+                <div class="languages-used" id="seamcarving-languages-used">
+                  February 2022
+                  <br>
+                  Node.js, Express.js
+                  <br>
+                  Google Maps API
+                  <br>
+                  Google Datastore
+                  <br>
+        
+                </div>
+                <div class="links">
+                  <a class="btn btn-primary" href="https://github.com/qingyuan-wu/rellit-nodejs" role="button" target="_blank">Source Code</a>
+                  <a class="btn btn-primary" href="https://summer22-sps-52.appspot.com/" role="button" target="_blank">Live Site</a>
+                </div>
+              </div>
+            </div>
             <div class="column" id="journally">
               <div class="content-in-column">
                 <div><strong>Journally - Reminder or Journal!</strong></div>
                 Journally is a full-stack project that won the <strong>best use of Twilio award</strong> at the recent U of T Hacks hackathon! It sends users a <strong>daily reminder via text to journal</strong>, where the user can reply with their entries. These entries are stored in a MySQL database and viewable on our website.
                 <hr>
                 <div class="languages-used" id="seamcarving-languages-used">
-                  April 2021
+                  February 2022
                   <br>
                   Flask - Twilio SMS backend
                   <br>
@@ -91,46 +173,6 @@
                 </div>
               </div>
             </div>
-
-            <div class="column" id="music-genre-classifier">
-              <div class="content-in-column">
-                <div><strong>Music Genre Classifier</strong></div>
-                This is a semester long machine learning project I'm currently working on. We're using a <strong>convolutional neural network</strong> to decompose a given soundtrack into vocals, drums, instrumental, and other components. Then, we will use another neural network to classify a given soundtrack.
-                <hr>
-                <div class="languages-used">
-                  April 2021
-                  <br>
-                  PyTorch - implementing our ML model
-                  <br>
-                  Convolutional neural network
-                </div>
-                <div class="links">
-
-                </div>
-              </div>
-            </div>
-            <div class="column" id="NLP">
-              <div class="content-in-column">
-                <div><strong>Paragraph Title Generator</strong></div>
-                I'm taking on this project as a member of the CloudClub AI Team. We are building a <strong>transformer neural network</strong>  in <strong>PyTorch</strong> that generates a title that summarizes a paragraph of input text.
-                <hr>
-                <div class="languages-used">
-                  April 2021
-                  <br>
-                  PyTorch - implementing our ML model
-                  <br>
-                  Natural Language Processing (NLP)
-                  <br>
-                  Transformer neural network
-                </div>
-                <div class="links">
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <h5 class="subsection-title">Programming</h5>
-          <div class="column-container">
             <div class="column" id="seamcarving">
               <div class="content-in-column">
                 <div><strong>Seamcarving</strong></div>
@@ -148,6 +190,43 @@
                 <a class="btn btn-primary" href="https://github.com/qingyuan-wu/Seam-Carving" role="button" target="_blank">Source Code</a>
                 <a class="btn btn-primary" href="https://youtu.be/9WJvDcoNFzA" role="button" target="_blank">Quick Demo</a>
                 </div>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="content-in-column">
+                <div><strong>Spacetogram Image Gallery</strong></div>
+                A frontend website that gets images from NASA's Astronomy Picture of the Day API and posts them in an Instagram-style feed.
+              </div>
+              <hr/>
+              <div class="languages-used">
+                  January 2022
+                  <br>
+                  JavaScript - make API calls and display images on DOM
+                  <br>
+                  Three.js - background effects
+              </div>
+              <div class="links">
+                <a class="btn btn-primary" href="https://github.com/qingyuan-wu/Spacetogram" role="button" target="_blank">Source Code</a>
+                <a class="btn btn-primary" href="https://spacetogram.herokuapp.com/" role="button" target="_blank">Live Site</a>
+              </div>
+            </div>
+
+            <!--Game of Life-->
+            <div class="column">
+              <div class="content-in-column">
+                <div><strong>Conway's Game of Life</strong></div>
+                A <a href="https://en.wikipedia.org/wiki/Conway's_Game_of_Life" target="_blank">Game of Life</a> visualizer. Used a space-efficient, 2-bit state matrix to store the present and next state. I'm looking to add exciting new features including unique starting states, logic gates, and the ability to implment simple circuits as the Game of Life is Turing Complete.
+              </div>
+              <hr/>
+              <div class="languages-used">
+                  January, 2022
+                  <br>
+                  JavaScript, P5.js
+              </div>
+              <div class="links">
+                <a class="btn btn-primary" target="_blank" href="https://github.com/qingyuan-wu/Game-of-Life">Source Code</a>
+                <a class="btn btn-primary" target="_blank" href="https://gameoflife-visualizer.herokuapp.com/">Play</a>
               </div>
             </div>
 
@@ -219,26 +298,6 @@
                 <a class="btn btn-primary" href="https://youtu.be/6eN_oq_5tU4" target="_blank" role="button">Quick Demo</a>
               </div>
             </div>
-
-            <div class="column">
-              <div class="content-in-column">
-                <div><strong>Spacetogram Image Gallery</strong></div>
-                A frontend website that gets images from NASA's Astronomy Picture of the Day API and posts them in an Instagram-style feed.
-              </div>
-              <hr/>
-              <div class="languages-used">
-                  January 2022
-                  <br>
-                  JavaScript - make API calls and display images on DOM
-                  <br>
-                  Three.js - background effects
-              </div>
-              <div class="links">
-                <a class="btn btn-primary" href="https://github.com/qingyuan-wu/Spacetogram" role="button" target="_blank">Source Code</a>
-                <a class="btn btn-primary" href="https://spacetogram.herokuapp.com/" role="button" target="_blank">Live Site</a>
-              </div>
-            </div>
-
           </div>
 
           <h5 id="design-and-research" class="subsection-title">Design and Research</h5>
@@ -280,60 +339,6 @@
               </div>
             </div>
           </div>
-
-          <h5 class="just-for-fun subsection-title">Just for Fun</h5>
-
-          <!--Breaking Bad-->
-          <div class="column">
-            <div class="content-in-column">
-              <div><strong>Breaking Bad API</strong></div>
-              A simple Website that fetches a random quote and character image from a Breaking Bad API, and posts them.
-            </div>
-            <hr/>
-            <div class="languages-used">
-                July, 2021
-                <br>
-                React
-            </div>
-            <div class="links">
-            </div>
-          </div>
-
-          <!--Game of Life-->
-          <div class="column">
-            <div class="content-in-column">
-              <div><strong>Conway's Game of Life</strong></div>
-              A <a href="https://en.wikipedia.org/wiki/Conway's_Game_of_Life" target="_blank">Game of Life</a> visualizer. Used a space-efficient, 2-bit state matrix to store the present and next state. I'm looking to add exciting new features including unique starting states, logic gates, and the ability to implment simple circuits as the Game of Life is Turing Complete.
-            </div>
-            <hr/>
-            <div class="languages-used">
-                January, 2022
-                <br>
-                JavaScript, P5.js
-            </div>
-            <div class="links">
-              <a class="btn btn-primary" target="_blank" href="https://github.com/qingyuan-wu/Game-of-Life">Source Code</a>
-              <a class="btn btn-primary" target="_blank" href="https://gameoflife-visualizer.herokuapp.com/">Play</a>
-            </div>
-          </div>
-
-          <!--Leetcode-->
-          <div class="column">
-            <div class="content-in-column">
-              <div><strong>Leetcode Problems</strong></div>
-              I keep a doc of some interesting Leetcode problems I've encountered and techniques I used to solve them.
-            </div>
-            <hr/>
-            <div class="languages-used">
-              Python
-            </div>
-            <div class="links">
-              <a class="btn btn-primary" target="_blank" href="work/Leetcode/leetcode.py" role="button">Set 1 (.py)</a>
-              <a class="btn btn-primary" target="_blank" href="work/Leetcode/DS_leetcode.py" role="button">Set 2 (.py)</a>
-              <a class="btn btn-primary" target="_blank" href="work/Leetcode/Leetcode-Notes.md" role="button">Set 3 (.md)</a>
-            </div>
-          </div>
-
       </section>
 
         <section id="school-section">
@@ -544,40 +549,34 @@
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">CSC343</th>
-                  <td>Databases and SQL
-                  </td>
-                  <td></td>
-                </tr>
-                <tr>
                   <th scope="row">APS360</th>
-                  <td>Machine Learning with PyTorch
+                  <td>Machine Learning with PyTorch. This course was an introduction to ML and various neural networks, including CNN, RNN, transformers, and VAE
                   </td>
                   <td>Music Genre Classifier</td>
                 </tr>
                 <tr>
                   <th scope="row">BME205</th>
-                  <td>Biomedical Engineering.</td>
+                  <td>This course introduced fundamental concepts in Biomedical Engineering</td>
                   <td></td>
                 </tr>
                 <tr>
                   <th scope="row">ESC204</th>
-                  <td>Engineering Design - Praxis III.</td>
-                  <td></td>
+                  <td>Engineering Design - Praxis III</td>
+                  <td>Plastic Sorter using machine learning and Arduino</td>
                 </tr>
                 <tr>
                   <th scope="row">ECE286</th>
-                  <td>Statistics.</td>
+                  <td>Topics covered include probability distributions, expected value, moment generating functions, and hypothesis testing</td>
                   <td></td>
                 </tr>
                 <tr>
                   <th scope="row">PHY294</th>
-                  <td>Quantum and thermal physics.</td>
+                  <td>Quantum and thermal physics covered quantum mechanics and statistical mechanics.</td>
                   <td></td>
                 </tr>
                 <tr>
                   <th scope="row">ECE259</th>
-                  <td>Electricity and magnetism.</td>
+                  <td>This course introduced the four Maxwell's equations and using them quantitatively to solve EM problems.</td>
                   <td></td>
                 </tr>
               </tbody>
@@ -587,8 +586,8 @@
         <section id="resume-section">
             <h4 class="section-title"><span>My Resume</span></h4>
             <div>
-              You can find a PDF of my resume <a href="resume/Qingyuan_Wu_resume_jan30.pdf" target="_blank" class="link-primary">here</a>
-              (last updated: Jan 30)
+              You can find a PDF of my resume <a href="resume/Qingyuan_Wu_resume_aug7.pdf" target="_blank" class="link-primary">here</a>
+              (last updated: Aug 7)
             </div>
         </section>
 

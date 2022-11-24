@@ -154,8 +154,6 @@ class Solution(object):
 ### 334. Increasing Triplet Subsequence (medium)
 Given unsorted array, return True if 3 elements (not necessarily consecutive) are increasing.
 
-Obviously sorting it would result in the trivial solution. The question asks for O(n) time and O(1) space.
-
 Here's my code:
 ```python
 def increasingTriplet(self, nums: List[int]) -> bool:
@@ -244,7 +242,7 @@ def generateMatrix(self, n: int) -> List[List[int]]:
 ### 238. Product of Array Except Itself (medium)
 Can't use division. We want to output an array. The key here is for every element of `arr`, its result is the successive multiplications of all elements left of it, multipled by the successive multiplications of all elements right of it. In fact, if we reversed the first two lines with the last two lines of the for loop, the output array should be all the same number - `prod(nums)` in particular.
 
-This solution isn't easy to think of and is rather unintuitive imo.But just think like this maybe: everytime we always set the arr value *before* we multiply by the element (last two lines of for loop). Therefore, the nums elemenet itself is never included.
+This solution isn't easy to think of and is rather unintuitive imo. But just think like this maybe: everytime we always set the arr value *before* we multiply by the element (last two lines of for loop). Therefore, the nums elemenet itself is never included.
 
 
 ```python
